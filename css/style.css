@@ -1,0 +1,367 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    vertical-align: baseline;
+    color: white;
+}
+header {
+    background-color: rgba(9, 62, 114, 0.7);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px;
+/*
+    
+    background: url(../images/Home/navbackground.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;*/
+}
+nav ul {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a{
+    font-weight: bold;
+    font-display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    color:white;
+    transition: color 0.5s ease ;
+}
+nav a:hover{
+    color: black;
+    text-decoration: underline solid 2px;
+}
+nav a.active{
+    color: black;
+    text-decoration: underline solid 2px;
+    transition: 1 text-decoration 0.3;
+    font-weight: bold;
+}
+
+/*
+.hero-background{
+    background: url(../images/Home/Background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    */
+section{
+    background: url(../images/Home/Background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero {
+    
+    display: flex;
+    justify-content: space-between;  
+    padding: 80px;
+    position: relative;
+   
+    /*background: url(../images/Home/Background.png) no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+
+.search-box{
+    display: flex;
+    background-color: transparent;
+    border-radius: 3px;
+    border:1px solid white ;
+    border-radius: 1.2ch;
+    align-items: center;
+}
+.sbox-content{
+    margin-left: 17px;
+}
+.search-box input{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+}
+.search-box input:focus{
+    border:none;
+    outline: none;
+}
+.search-box input::placeholder{
+    color: white;
+}
+.hero-content .tagline{
+    display: inline-block;
+    text-transform: uppercase;
+    background: #72a687;
+    font-weight: 500;
+    margin: 20px;
+    padding: 8px 16px;
+    border: 2px solid rgb(0, 232, 108) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    width: 270px;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+
+}
+.tagline:hover{
+    background-color: #1a4e2e ;
+    border: 2px solid rgb(247, 253, 250) ;
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 70px;
+    margin: 22px;
+    padding-top:25px ;
+}
+
+.hero-content .buttons {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+p {
+    margin-top: 0px;
+    line-height:24px;
+    margin-bottom: 14px;
+}
+.first-btn i{
+    background-color: white;
+    color:rgb(253, 126, 90) ;
+    border-radius: 50%;
+    padding-right:4px;
+    padding-top:4px ;
+    padding-bottom: 4px;
+    padding-left: 1.5px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+.first-btn:hover{
+    background-color: rgb(194, 73, 39);
+    transform: translate(14px, 28px), scale(1.4)  ;
+    transition: all 0.4s ease;
+}
+.first-btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 23px;
+    
+    background-color: rgb(253, 126, 90);
+    transition: all 0.4s ease;
+}
+.second-btn {
+    padding: 10px 20px;
+    margin-top: 39px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 23px;
+    transition:all 0.4s ease;
+}
+.second-btn:hover{
+    background-color: rgb(83, 167, 83);
+    transition:all 0.4s ease;
+}
+
+.H-img {
+    margin-top: 29px;
+    display: flex;
+    width: 500px;
+    right: 10%;
+    position: absolute;
+    top:20%;
+    
+} 
+.icon{
+    font-size: 40px;
+    padding: 20px 20px;
+    background-color: rgb(136, 220, 136);
+    border-radius: 17px;
+}
+.hours{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height:2.7;
+}
+.open-hours {
+  display: flex;              
+  gap: 16px;                    
+  align-items: center;           
+  padding: 14px 18px;           
+  border-radius: 12px;         
+  width: fit-content;           
+}
+/*
+.appointment-form .doctor, .appointment-form .time, .appointment-form button{
+    left: 10%;
+    background: white;
+    border:3px ;
+    bottom: 0;
+}
+.appointment{
+    display:inline;
+}
+    */
+.appointment-form{
+    position: absolute;
+    background-color: white;
+    right: 15%;
+    border-radius: 12px;
+    bottom: -2%;
+    width:430px ;
+    height: 200px; 
+}
+.appointment-content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 80px;
+}
+.appointment-form .doctor .type{
+    position: absolute;
+    border: 0.1px solid rgb(168, 187, 198);
+    padding: 10px;
+    border-radius: 5px;
+    left: 9%;
+    top: 20px;
+    width: 160px;
+    
+}
+select{
+    
+    width: 80%;
+}
+select:focus{
+    border: none;
+    outline: none;
+}
+
+.appointment-form .time .date{
+    position: absolute;
+    border: 0.1px solid rgb(168, 187, 198);
+    padding: 10px;
+    border-radius: 5px;
+    left: 9%;
+    top: 78px;
+    width: 160px;
+}
+.appointment-form .time .time-2{
+    position: absolute;
+    border: 0.1px solid rgb(168, 187, 198);
+    padding: 10px;
+    border-radius: 5px;
+    right: 9%;
+    top: 78px;
+    width: 160px;
+}
+.appointment-form .doctor .name{
+    position: absolute;
+    border: 0.1px solid rgb(168, 187, 198);
+    padding: 10px;
+    border-radius: 5px;
+    right: 9%;
+    top: 20px;
+    width: 160px;
+   
+}
+.appointment-form .time select{
+    color:#1a4e2e;
+}
+.appointment-form .doctor select{
+    color:#1a4e2e;
+}
+.appointment-form .checking{
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    text-align: center;
+    background-color: rgb(253, 126, 90);
+    padding: 10px;
+    text-decoration: none;
+    border-radius:23px ;
+    padding: 29p;
+}
+
+.appointment-form .doctor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.companies{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding:70px;
+    scale: 0.8;
+    gap: 80px;
+}
+.about-us{
+    margin: 10px;
+    border-radius:23px ;
+    position: relative;
+    background: url("/images/About/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    gap: 60px;
+}
+ .first-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.mask{
+    top: 20px;
+    scale: 0.8;
+}
+.vid-cover{
+    
+}
+.about-p{
+    color: rgb(41, 97, 202);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.about-tag{
+    display: inline-block;
+    text-transform: uppercase;
+    background: #72a687;
+    font-weight: 500;
+    margin: 20px;
+    padding: 8px 16px;
+    border: 2px solid rgb(0, 232, 108) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    width: fit-content;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
