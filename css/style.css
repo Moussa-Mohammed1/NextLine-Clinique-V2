@@ -234,7 +234,7 @@ h1 {
     border-radius: 12px;
     bottom: -2%;
     width:430px ;
-    height: 200px; 
+    height: 230px; 
 }
 .appointment-content{
     display: flex;
@@ -253,7 +253,6 @@ h1 {
     
 }
 select{
-    
     width: 80%;
 }
 select:focus{
@@ -331,7 +330,7 @@ select:focus{
     margin: 10px;
     border-radius:23px ;
     position: relative;
-    background: url("/images/About/background.png") no-repeat;
+    background: url("../images/About/background.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -437,7 +436,7 @@ select:focus{
     transform: scaleX(1.6);
     transform: scale(0.7);
 }
-.director-say.{
+.director-say{
     position: absolute;
     margin-right: 60%;
     bottom: 0;
@@ -476,6 +475,7 @@ select:focus{
 .fa-arrow-right{
     color: rgb(223, 87, 87);
     background-color: white;
+
 }
 .more-about{
     background-color: rgb(223, 87, 87);
@@ -517,7 +517,7 @@ select:focus{
   font-weight: 400;
 }
 .services {
-    background: url("/images/Services/background.png") no-repeat;
+    background: url("../images/Services/background.png") no-repeat;
     background-size: cover;
     background-position: center;
     height: 1150px;
@@ -529,6 +529,12 @@ select:focus{
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 20px;
+}
+.m-s{
+    text-decoration: none;
+}
+.m-p{
+    text-decoration: none;
 }
 .card {
     display: inline;
@@ -712,6 +718,7 @@ select:focus{
     font-weight: 700;
     font-size: larger;
     padding: 20px;
+    opacity: 0.9;
     text-transform: capitalize;
 }
 .card-2 p{
@@ -758,15 +765,417 @@ select:focus{
     border-radius: 60px;
     transition: all 0.3s ease;
 }
-.drs-appointment-section{
-    background: url("/images/doctors/background-app.png") no-repeat;
+.second-section-container {
+    background: url("../images/doctors/background-app.png") no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 70px;
-    width: 1340px ;
+    padding: 60px;
+    margin: 20px;
     height: 485px;
+    border-radius: 23px;
 }
 .nd-section-content{
-    margin: 30px;
+    display: block;
 }
+.nd-section-content h2{
+    line-height: 50px;
+    font-size: 40px;
+}
+.nd-section-content p{
+    width: 450px;
+    padding-top: 30px;
+}
+.apn-btn-container{
+    padding-top: 80px;
+    position: relative;
+}
+.nd-section-content a{
+    position: absolute;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 17px;
+    padding-right: 13px;
+    border-radius: 30px;
+    color: rgb(94, 94, 240);
+    text-transform: capitalize;
+    font-weight:lighter;
+    left: 0%;
+    transition: all 0.3s ease;
+}
+.nd-section-content a:hover{
+    color: white;
+    background-color: #5d4c4c;
+    transform: scale(1.04);
+}
+.drs-btn{ 
+    background-color: rgb(22, 121, 243);              
+    padding-top: 8px;   
+    transform: scale(0.7);
+    padding-bottom: 8px ;   
+    padding-left:8px ;   
+    padding-right:25px ;   
+    color: white;          
+    border-radius: 50%;        
+    display: inline-flex;      
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.pricing-container{
+    margin: 90px;
+}
+.pricing-logo{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3ae47e;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgb(76, 173, 121) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+.pricing-header{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-header .pricing-top{
+    color: rgb(89, 89, 234);
+    font-size: 50px;
+    font-weight: 600 ;
+    opacity: 0.9;
+    padding-top: 30px;
+    padding-bottom:30px ;
+}
+.pricing-header .pricing-p{
+    margin-top: 30px;
+    color:black;
+    width: 430px;
+    height: fit-content;
+    text-align: right;
+    line-height: 1.7em;
+   
+}
+.pricing-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-top: 35px;
+}
+.cards-3{
+    color: black;
+}
+.div-line{
+    height: 1px;
+    background-color: #120f0f;
+    margin: 10px 2px;
+    opacity:0.5;
+}
+.card-3{
+    display: inline;
+    text-align: left;
+    background: white;
+    border:1px solid rgb(219, 208, 208);
+    border-radius: 23px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: fit-content;
+    transition: all 0.3s ease;
+    transform: translateY(-20px);
+}
+.card-3:hover{
+    transform: translateY(-40px);
+    box-shadow:5px 10px 10px #c4c2c2;
+    background-color: rgb(255, 255, 102);
+}
+.card-3 h2{
+    color: rgb(70, 70, 160);
+    font-family:'IBM Plex Sans',sans-serif;
+    padding-bottom: 15px;
+}
+.card-3 .pricing-p{
+    color: rgb(35, 32, 32);
+}
+.card-3 .price{
+    color: blue;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 50px;
+    font-family:'IBM Plex Sans',sans-serif;
+}
+.card-3 .slash{
 
+    color: black;
+    padding-top: 25px;
+    font-size:30px ;
+    opacity: 0.6;
+}
+.p-part{
+    position: relative;
+    display: flex;
+}
+.features {
+    display: inline;
+}
+.features h5{
+    color: blue;
+    text-transform: capitalize;
+    opacity: 0.7;
+    font-size: 25px;
+    font-weight: 520;
+    padding-top: 13px;
+}
+.features ul li{
+    color: black;
+    padding-top: 13px;
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.features ul{
+    padding-bottom: 30px;
+}
+.fa-circle-check{
+    color: rgb(86, 165, 86);
+    padding-right: 30px;
+}
+.pricing-btm-btn{
+    display: inline;
+    text-align: center;
+}
+.pricing-btm-btn a{
+    color: red;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+.pricing-btm-btn .s-more-f{
+    color: red;
+    text-transform: capitalize;
+    border-radius: 60px;
+    border: 1px solid red;
+}
+.fa-chevron-down{
+    color: red;
+    transform: scale(0.7);
+    padding-left: 30px;
+}
+.pricing-btm-btn .or{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pricing-btm-btn .s-plan{
+    color: white;
+    padding-top: 15px;
+    background-color: rgb(225, 109, 96);
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 60px;
+    text-transform: capitalize;
+    border-radius: 60px;
+    border: 1px solid red;
+}
+.fa-arrow-up-right-from-square{
+    color: white;
+    transform: scale(0.7);
+    padding-left: 30px;
+}
+.recommended{
+    display: flex;
+}
+.recommended p{
+    color: blue;
+    opacity: 0.4;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-left: 4px;
+}
+.third-choice{
+    display: flex;
+}
+.third-choice .fa-circle-check{
+    padding-top: 20px;
+}
+.features li p{
+    color: black;
+    line-height: 30px;
+}
+.more-pricing{
+    position: relative;
+}
+.m-p-container{
+    position: relative;
+}
+.m-p-container{
+    display: flex;
+}
+.m-p-container .fa-arrow-right{
+
+    background-color: rgb(255, 255, 255);              
+    
+    transform: scale(1);
+    border-radius: 20px;
+    color: rgb(232, 55, 55);          
+    padding-top: 2px;
+    margin-left: 10px;
+}
+.m-p-container .m-p{
+    position: absolute;
+    display: flex;
+    background-color: rgb(232, 55, 55);
+    color: white;
+    width: fit-content;
+    text-transform: capitalize;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    left: 550px;
+    bottom: 20px;
+
+}
+.contact{
+    background: url("../images/Contact/background.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+.contact-content{
+    
+    background-color:white ;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 30px;
+}
+.contact-header h4{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3ae47e;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgb(76, 173, 121) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    width: fit-content;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+.contact-header p{
+    color: rgb(89, 89, 234);
+    font-size: 40px;
+    font-weight: 600 ;
+    opacity: 0.9;
+    padding-top: 30px;
+    padding-bottom:30px ;
+
+}
+.user-info{
+    display: flex;
+    justify-content: space-between;
+}
+.left-section{
+    display: inline;
+}
+.user-info h3{
+    color :black;
+    padding-bottom: 7px;
+}
+.left-section .u-name{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+}
+.forum select{
+    width: 100%;
+}
+.left-section h3{
+    padding-top:30px ;
+}
+.forum h3{
+    padding-top:30px ;
+    color: black;
+    padding-bottom: 7px;
+}
+.left-section .d-type{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+    display: flex;
+}
+.left-section .u-date{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+}
+.right-section .d-name{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+}
+.right-section .u-time{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+}
+.left-section select{
+    color :black;
+    
+}
+.right-section select{
+    color :black;
+    right: 4%;
+}
+.right-section {
+    display: inline;
+}
+.right-section .email{
+    border: 1px solid black;
+    padding: 20px;
+    width:500px;
+    border-radius: 15px;
+}
+.description{
+    border: 1px solid black;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    width:1105px;
+    border-radius: 15px;
+}
+.send-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+.send-btn a{
+    text-decoration: none;
+    background-color:rgb(232, 55, 55);
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+.send-btn .send{
+    background-color:rgb(232, 55, 55) ;
+    color: white;
+    padding-left: 10px;
+}
