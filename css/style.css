@@ -9,8 +9,9 @@
     color: white;
 }
 header {
-    background-color: rgba(9, 62, 114, 0.7);
-    position: fixed;
+    background: url("/images/Home/navbackground.png") no-repeat;
+    background-size: cover;
+    background-position:center ;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -96,7 +97,7 @@ section{
     color: white;
     padding: 16px;
 }
-.search-box input:focus{
+input:focus{
     border:none;
     outline: none;
 }
@@ -145,7 +146,7 @@ h1 {
     margin-bottom: 20px;
     margin-top: 30px;
 }
-p {
+.tgl-p {
     margin-top: 0px;
     line-height:24px;
     margin-bottom: 14px;
@@ -170,7 +171,6 @@ p {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 23px;
-    
     background-color: rgb(253, 126, 90);
     transition: all 0.4s ease;
 }
@@ -297,14 +297,14 @@ select:focus{
 }
 .appointment-form .checking{
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     right: 30%;
     text-align: center;
     background-color: rgb(253, 126, 90);
     padding: 10px;
     text-decoration: none;
     border-radius:23px ;
-    padding: 29p;
+    padding: 14px;
 }
 
 .appointment-form .doctor{
@@ -321,7 +321,13 @@ select:focus{
     scale: 0.8;
     gap: 80px;
 }
+.divider-line {
+  height: 2px;
+  background-color: #120f0f;
+  margin: 10px 0; 
+}
 .about-us{
+    
     margin: 10px;
     border-radius:23px ;
     position: relative;
@@ -335,33 +341,322 @@ select:focus{
     padding:30px;
     gap: 60px;
 }
- .first-section{
+.first-section{
     display: flex;
     flex-direction: column;
-    
-}
+    gap: 20px;
+ }
 .mask{
     top: 20px;
     scale: 0.8;
 }
 .vid-cover{
-    
+    height:50%;
+    width: 250px;
+    border-radius: 30px;
+    margin-left: 60px;
 }
+
 .about-p{
     color: rgb(41, 97, 202);
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 60px;
 }
 .about-tag{
     display: inline-block;
     text-transform: uppercase;
-    background: #72a687;
+    background: #3ae47e;
     font-weight: 500;
-    margin: 20px;
     padding: 8px 16px;
-    border: 2px solid rgb(0, 232, 108) ;
+    border: 2px solid rgb(76, 173, 121) ;
     border-radius: 14px 14px 0px 14px;
     font-size: 14px;
+    width: fit-content;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+.exp{
+    position: absolute;
+    display: inline-block;
+    text-transform: capitalize;
+    background: rgb(136, 220, 136);
+    font-weight: 500;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 14px 14px 14px 0px ;
+    font-size: 20px;
+    width: fit-content;
+    bottom: 22%;
+    left: 24%;
+    transition: all 0.4s ease;
+    transform: translateY(-20px);
+}
+.exp.exp:hover{
+    transform: translateY(-40px);
+    background-color: darkgreen;
+    box-shadow: 5px 10px 1Opx rgb(0, 0, 0,0.2);
+}
+.play{
+    position: absolute;
+    scale: 0.9;
+    bottom: 7%;
+    left: 8%;
+}
+.about-p-2{
+    color:black;
+    width: 430px;
+    padding-bottom: 47px;
+}
+.about-p-3{
+    color:black;
+    width: 430px;
+}
+.saying-tag{
+    margin-bottom: 0;
+    color:rgb(73, 73, 234);
+    width: 430px;
+    opacity: 0.6;
+    padding-top: 4px;
+}
+.border-saying{
+    border: 1.5px solid rgb(212, 120, 120);
+    border-radius: 18px;
+    padding: 45px;
+    gap:20px;
+}
+.saying-part{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.dr-flash{
+    transform: scaleX(1.6);
+    transform: scale(0.7);
+}
+.director-say.{
+    position: absolute;
+    margin-right: 60%;
+    bottom: 0;
+}
+.second-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 90px;
+}
+.face-icons{
+    position: absolute;
+    width: fit-content;
+    bottom: 46%;
+    z-index: 89;
+    left:50.82%;
+}
+.more-about .button{
+    /*color: rgb(255, 248, 248);
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 4px;
+    width: fit-content;
+    */
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    text-align: center;
+    background-color: rgb(253, 126, 90);
+    padding: 10px;
+    text-decoration: none;
+    border-radius:23px ;
+    padding: 29p;
+    
+}
+.fa-arrow-right{
+    color: rgb(223, 87, 87);
+    background-color: white;
+}
+.more-about{
+    background-color: rgb(223, 87, 87);
+    width: fit-content;
+    font-size: large;
+}
+.round-it{
+    color: rgb(223, 87, 87); 
+    background-color: white;              
+    padding: 4px;             
+    border-radius: 50%;        
+    display: inline-flex;      
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.stat-box {
+  text-align: center;
+}
+.statistic {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff; 
+}
+.stats-box h2 {
+  font-size: 60px;
+  color: #2196f3; 
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.stats-box p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+.services {
+    background: url("/images/Services/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+    margin: 5px;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+    height: fit-content;
+}
+.card {
+    display: inline;
+    text-align: left;
+    background: white;
+    border-radius: 23px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: fit-content;
+    transition: all 0.3s ease;
+    transform: translateY(-20px);
+}
+.services-content{
+    margin: 40px;
+}
+.our-services{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3ae47e;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgb(76, 173, 121) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+.services-p-1{
+    color: rgb(41, 97, 202);
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 60px;
+}
+.services-p-2{
+   
+    margin-top: 30px;
+    color:black;
+    width: 430px;
+    height: fit-content;
+    text-align: right;
+    line-height: 1.7em;
+}
+.services-top{
+   
+    display: flex;
+    justify-content: space-around;
+}
+.card h1{
+    color: rgb(89, 89, 234);
+    text-transform: capitalize;
+    font-weight: 540;
+}
+.card p{
+    color: black;
+    width: 240px;
+}
+.n-serv{
+    display :flex ;
+    gap: 80px;
+}
+.card:hover{
+    transform: translateZ(-40px);
+    transition: all 0.3s ease;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.n-serv .nbr{
+    transform: scale(0.8);
+    width: fit-content;
+}
+.services-bottom{
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    text-transform: capitalize;
+    background-color:rgb(223, 87, 87) ;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 40.5%;
+    border-radius: 23px;
+    transition: all 0.3s ease;
+}
+.services-bottom:hover{
+    background-color: rgb(78, 31, 31);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.round-servc{
+    color: rgb(223, 87, 87); 
+    background-color: white;              
+    padding: 4px;             
+    border-radius: 50%;        
+    display: inline-flex;      
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.xplore{
+    display: inline-block;
+    width: 170px;
+    padding:13px 30px;
+    padding-right:30px;
+    border: 1px solid red;
+    margin-top:20px ;
+    justify-content: center;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.xplore:hover{
+    background-color: #aea8a8;
+    transition: all 0.3s ease;
+}
+.doctors-content h1{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3ae47e;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgb(76, 173, 121) ;
+    border-radius: 14px 14px 0px 14px;
+    font-size: 14px;
+    left: 0;
+    top: 0;
     width: fit-content;
     transition: background-color 0.4s ease, padding 0.4s ease;
 }
