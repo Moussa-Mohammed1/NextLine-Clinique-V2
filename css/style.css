@@ -9,9 +9,9 @@
     color: white;
 }
 header {
-    background: url("/images/Home/navbackground.png") no-repeat;
+    /*background: url("../images/Home/navbackground.png") no-repeat;
     background-size: cover;
-    background-position:center ;
+    background-position:center ;*/
     z-index: 1000;
     top: 0;
     left: 0;
@@ -62,10 +62,14 @@ nav a.active{
     background-position: center;
 }
     */
+
+.uni-background{
+    background: url("../images/Home/background.png");
+}
 section{
-    background: url("../images/Home/Background.png") no-repeat;
+   /* background: url("../images/Home/Background.png") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     position: relative;
 }
 .hero {
@@ -447,12 +451,16 @@ select:focus{
     position: relative;
     gap: 90px;
 }
+.s-setion{
+    position: absolute;
+    bottom: 120px;
+}
 .face-icons{
     position: absolute;
     width: fit-content;
-    bottom: 46%;
+    bottom: 180px;
     z-index: 89;
-    left:50.82%;
+    right: 470px;
 }
 .more-about .button{
     /*color: rgb(255, 248, 248);
@@ -1178,4 +1186,5 @@ select:focus{
     background-color:rgb(232, 55, 55) ;
     color: white;
     padding-left: 10px;
+
 }
